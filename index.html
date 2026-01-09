@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio do Cainã</title>
+    <!-- LINK PARA DOWNLOAD DE OPÇÕES DE ICONES PARA A PARTE SUPERIOR DA PAGINA: https://www.flaticon.com/free-icons/ -->
+    <link rel="icon" href="./imagens/<NOME_DO_ICONE>.png" type="image/x-icon" />
+    <!-- LINK PARA O CSS DA SUA PAGINA -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./js/script.js"></script>
+
+    <!-- LINK PARA OS BOTOES DAS REDES SOCIAIS USADOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="outer-container">
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+        <a
+          href="https://wa.me/5521964928248"
+          target="_blank"
+          class="whatsapp-link"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/caina-682789264/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/kayn.tracer/#" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:cainaluz@gmail.com?subject=Fale%20Conosco"
+          ><i class="far fa-envelope"></i
+        ></a>
+        <a href="https://github.com/KayTracer" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+      </div>
+      <div class="form-container">
+        <!--COLOQUE AQUI O CODIGO DA SUA PAGINA -->
+        <div class="input-container">
+          <!-- DADOS DE ENTRADA DO USUARIO -->
+          <h2 align="center">Calculadora de IMC</h2>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="input_nome" placeholder="Digite seu nome" />
+
+          <label for="peso">Peso (kg):</label>
+          <input type="number" id="input_peso" placeholder="Digite seu peso" />
+
+          <label for="altura">Altura (m):</label>
+          <input
+            type="number"
+            id="input_altura"
+            placeholder="Digite sua altura"
+          />
+
+          <button onclick="calcularIMC()">Calcular IMC</button>
+
+          <div id="resultado-container">
+            <h3>Resultado:</h3>
+            <p id="parag_resultado"></p>
+          </div>
+        </div>
+
+        <div class="info-container">
+          <!-- DADOS QUE VAI EXIBIR PARA O USUARIO -->
+        </div>
+      </div>
+    </div>
+
+    <div class="rodape-container">
+      Desenvolvido por
+      <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"
+        >Cainã Luz</a
+      >
+      no Curso de Desenvolvimento web no Senai - orientado pelo professor
+      Anthony Freitas<br />Todos os direitos reservados - 2023
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
